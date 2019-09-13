@@ -143,13 +143,12 @@ Map drawing
 
 File reading and writing
 - `bool FileExists(const char* filename)` Checks whether the specified file exists, either by full path or relative to the program's executable location.
-- ```
-bool WriteMatBinary(std::ofstream& ofs, const cv::Mat& out_mat)
-bool SaveMatBinary(const std::string& filename, const cv::Mat& output)
-bool ReadMatBinary(std::ifstream& ifs, cv::Mat& in_mat)
-bool LoadMatBinary(const std::string& filename, cv::Mat& output)
-```
-Allow for the saving and loading of OpenCv Mat objects as binary files. This is used to safe the SURF features' descriptors as *Descriptors.bin*. The functions were taken from [BinaryCvMat](https://github.com/takmin/BinaryCvMat/) by takmin.
+-
+`bool WriteMatBinary(std::ofstream& ofs, const cv::Mat& out_mat)`<br/>
+`bool SaveMatBinary(const std::string& filename, const cv::Mat& output)`<br/>
+`bool ReadMatBinary(std::ifstream& ifs, cv::Mat& in_mat)`<br/>
+`bool LoadMatBinary(const std::string& filename, cv::Mat& output)`<br/>
+Allow for the saving and loading of OpenCv Mat objects as binary files. This is used to safe the SURF features' descriptors as *descriptors.bin*. The functions were taken from [BinaryCvMat](https://github.com/takmin/BinaryCvMat/) by takmin.
 
 <a name="314"></a>
 #### 3.1.4. udp_client.cpp and udp_server.cpp
