@@ -1,5 +1,5 @@
 # Microsnapshot Navigation
-### [Dual population coding for topological navigation: Combining discrete state-action graphs with distributed spatial knowledge.][4]
+### Dual population coding for topological navigation: Combining discrete state-action graphs with distributed spatial knowledge.[ &#91;4&#93; ](#r4)
 #### Eberhard Karls Universität Tübingen <br/> Cognitive Neuroscience <br/> Baumann T, Ecke G and Mallot HA.
 
 ## Releases
@@ -33,9 +33,9 @@
 <a name="desc"></a>
 ## 1. Description
 
-This repository contains code, project files and compiled executables used for [Dual population coding for topological navigation: Combining discrete state-action graphs with distributed spatial knowledge.][4]
+This repository contains code, project files and compiled executables used for *Dual population coding for topological navigation: Combining discrete state-action graphs with distributed spatial knowledge.*[ &#91;4&#93; ](#r4)
 >**Abstract:**
-> Topological schemes for navigation from visual snapshots have been based on graphs of panoramic images and action links allowing the transition from one snapshot point to the next; see, for example, [Cartwright and Collett][1] or [Franz et al.][2]. These algorithms can only work if at each step a unique snapshot is recognized to which a motion decision is associated. Here, we present a population coding approach in which place is encoded by a population of recognized “micro-snapshots” (i.e. features), each with an associated action. Robot motion is then computed by a voting scheme over all activated associations. The algorithm was tested in a large virtual environment ([Virtual Tübingen][3]) and shows biologically plausible navigational abilities.
+> Topological schemes for navigation from visual snapshots have been based on graphs of panoramic images and action links allowing the transition from one snapshot point to the next; see, for example, Cartwright and Collett[ &#91;1&#93; ](#r1) or Franz et al.[ &#91;2&#93; ](#r2). These algorithms can only work if at each step a unique snapshot is recognized to which a motion decision is associated. Here, we present a population coding approach in which place is encoded by a population of recognized “micro-snapshots” (i.e. features), each with an associated action. Robot motion is then computed by a voting scheme over all activated associations. The algorithm was tested in a large virtual environment (Virtual Tübingen[ &#91;3&#93; ](#r3)) and shows biologically plausible navigational abilities.
 
 This project, in the following shortened to **Microsnapshot Navigation**, is a navigation algorithm which is able to navigate large environments by utilizing only monocular image information and local directional movements. This is realized in two steps: First, the environment is explored (e.g., by random walking) and a graph of small image patches (i.e., nodes are [SURF features], the titular microsnapshots) linked by directional movement information is created. Then, the algorithm may navigate to any known position within the explored environment by combining multiple shortest paths in the graph in a voting scheme.
 
@@ -202,10 +202,14 @@ The UDP interface is used so that the program providing the simulation may be ch
 <a name="refs"></a>
 ## 5. References
 
+<a name="r1"></a>
 [1] Cartwright BA, Collet TS. Landmark maps for honeybees. Biological Cybernetics. 1987;57:85 - 93.
 
+<a name="r2"></a>
 [2] Franz MO, Schölkopf B, Mallot HA, Bülthoff HH. Learning View Graphs for Robot Navigation. Autonomous Robots. 1998;5:111 - 125.
 
+<a name="r3"></a>
 [3] vaan Veen HAHC, Distler HK, Braun SJ, Bülthoff HH. Navigating through a virtual city: Using virtual reality technology to study human action and perception. Future Generation Computer Systems. 1998;14:231 - 242.
 
+<a name="r4"></a>
 [4] *to be released.*
