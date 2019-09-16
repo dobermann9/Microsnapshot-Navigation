@@ -37,7 +37,7 @@ This repository contains code, project files and compiled executables used for *
 >**Abstract:**
 > Topological schemes for navigation from visual snapshots have been based on graphs of panoramic images and action links allowing the transition from one snapshot point to the next; see, for example, Cartwright and Collett[ &#91;1&#93; ](#refs) or Franz et al.[ &#91;2&#93; ](#refs). These algorithms can only work if at each step a unique snapshot is recognized to which a motion decision is associated. Here, we present a population coding approach in which place is encoded by a population of recognized “micro-snapshots” (i.e. features), each with an associated action. Robot motion is then computed by a voting scheme over all activated associations. The algorithm was tested in a large virtual environment (Virtual Tübingen[ &#91;3&#93; ](#refs)) and shows biologically plausible navigational abilities.
 
-This project, in the following shortened to **Microsnapshot Navigation**, is a navigation algorithm which is able to navigate large environments by utilizing only monocular image information and local directional movements. This is realized in two steps: First, the environment is explored (e.g., by random walking) and a graph of small image patches (i.e., nodes are [SURF features], the titular microsnapshots) linked by directional movement information is created. Then, the algorithm may navigate to any known position within the explored environment by combining multiple shortest paths in the graph in a voting scheme.
+This project, in the following shortened to **Microsnapshot Navigation**, is a navigation algorithm which is able to navigate large environments by utilizing only monocular image information and local directional movements. This is realized in two steps: First, the environment is explored (e.g., by random walking) and a graph of small image patches (i.e., nodes are SURF features[ &#91;5&#93; ](#refs), the titular microsnapshots) linked by directional movement information is created. Then, the algorithm may navigate to any known position within the explored environment by combining multiple shortest paths in the graph in a voting scheme.
 
 The project is split in two parts: The main program, i.e., the navigation algorithm, can be found in the subfolder *\Microsnapshot Navigation*. It is written in C++ and comes with a Microsoft Visual Studio solution file. The *\Unity Project Files* subfolder contains an empty virtual environment with panoramic camera agent to test out the algorithm. The files are a Unity project designed to be used with the [Unity](https://unity.com/) editor. The virtual environment within the project is empty due to file size restrictions.
 
@@ -201,14 +201,12 @@ The UDP interface is used so that the program providing the simulation may be ch
 <a name="refs"></a>
 ## 5. References
 
-<a name="r1"></a>
 [1] Cartwright BA, Collet TS. Landmark maps for honeybees. Biological Cybernetics. 1987;57:85 - 93.
 
-<a name="r2"></a>
 [2] Franz MO, Schölkopf B, Mallot HA, Bülthoff HH. Learning View Graphs for Robot Navigation. Autonomous Robots. 1998;5:111 - 125.
 
-<a name="r3"></a>
 [3] vaan Veen HAHC, Distler HK, Braun SJ, Bülthoff HH. Navigating through a virtual city: Using virtual reality technology to study human action and perception. Future Generation Computer Systems. 1998;14:231 - 242.
 
-<a name="r4"></a>
 [4] *to be released.*
+
+[5] Bay H, Ess A, Tuytelaars T, Van Gool L. Speeded-up robust features (SURF). Computer Vision and Image Understanding. 2008;110:346-359.
